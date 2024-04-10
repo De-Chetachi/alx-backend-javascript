@@ -10,5 +10,6 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
           delete response.reason;
         }
       }
+      return respones;
     });
 }
