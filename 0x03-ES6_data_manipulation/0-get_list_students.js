@@ -1,6 +1,6 @@
 export default function getListStudents() {
-  function studentObject(id, firstname, location) {
-    const student = { id, firstname, location };
+  function studentObject(id, firstName, location) {
+    const student = { id, firstName, location };
     return student;
   }
   const students = [];
