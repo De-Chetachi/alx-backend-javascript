@@ -11,20 +11,19 @@ function countStudents(path) {
   // console.log(lines)
   const fields = {};
   for (const line of lines) {
-    if (line.trim() === '') continue;
-    const stu = line.split(',');
-    // if field object dont already have this field property set it
-    // stu[3] holds the field of study
-    numStudents += 1
-    if (!(stu[3] in fields)) {
-      fields[stu[3]] = { total: 1, students: [stu[0]] };
-    }
-
-    // else increment the field's total property
-    // add the students firstname to the field's students property which is a list
-    else {
-      fields[stu[3]].total += 1;
-      fields[stu[3]].students.push(stu[0]);
+    if (line.trim() !== '') {
+      const stu = line.split(',');
+      // if field object dont already have this field property set it
+      // stu[3] holds the field of study
+      // else increment the field's total property
+      // add the students firstname to the field's students property which is a list
+      numStudents += 1;
+      if (!(stu[3] in fields)) {
+        fields[stu[3]] = { total: 1, students: [stu[0]] };
+      } else {
+        fields[stu[3]].total += 1;
+        fields[stu[3]].students.push(stu[0]);
+      }
     }
   }
   // console.log(fields);
