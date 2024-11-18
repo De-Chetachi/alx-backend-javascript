@@ -6,7 +6,7 @@ import { expect } from 'chai';
 //const expect = chai.expect;
 
 //const calculateNumber = require('./2-calcul.js');
-import calculateNumber from './2-calcul.js';
+import calculateNumber from './2-calcul_chai.js';
 
 describe('calculateNumber', function() {
   describe('SUM', function() {
