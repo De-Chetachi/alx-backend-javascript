@@ -20,4 +20,4 @@ console.log(calculateNumber(0, 0));
 console.log(calculateNumber(-1.5, -2.4));
 console.log(calculateNumber('a', 'b'));
 console.log(calculateNumber('a', 10));
-export default calculateNumber;
+module.exports = calculateNumber;
