@@ -17,6 +17,12 @@ describe('calculateNumber', function() {
   it('round down <.5, round up >=.5', function() {
     assert.equal(calculateNumber(2, 3), 5);
   });
+  it('round down <.5, round up >=.5', function() {
+    assert.equal(calculateNumber(2, 2.3), 4);
+  });
+  it('round down <.5, round up >=.5', function() {
+    assert.equal(calculateNumber(2, 2.7), 5);
+  });
   it('0 0 = 0', function() {
     assert.equal(calculateNumber(0, 0), 0);
   });
