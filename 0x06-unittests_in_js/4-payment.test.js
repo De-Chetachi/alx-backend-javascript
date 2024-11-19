@@ -2,7 +2,7 @@
 
 const Utils = require('./utils.js');
 const sinon = require('sinon')
-const sendPaymentRequestToApi = require('./3-payment.js');
+const sendPaymentRequestToApi = require('./4-payment.js');
 
 describe('sendPaymentRequestToApi', function() {
   it('should use Utils.calculateNumber', function() {
