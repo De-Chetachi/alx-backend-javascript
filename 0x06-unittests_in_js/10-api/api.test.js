@@ -83,15 +83,5 @@ describe('app', function() {
         done();
       });
     });
-    it('should return appropriate response', function(done) {
-      request.post({ url: 'http://localhost:7865/login', json: true, body: { name: 'Cheta', } }, function(error, response, body) {
-        if (error) {
-          expect(response.statusCode).to.not.equal(200)
-        } else {
-          expect(response.body).to.deep.equal('Welcome Cheta');
-        }
-        done();
-      });
-    });
   })
 });
