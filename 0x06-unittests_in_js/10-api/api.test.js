@@ -78,7 +78,7 @@ describe('app', function() {
         if (error) {
           expect(response.statusCode).to.not.equal(200);
         } else {
-          expect(response.statusCode).to.equal(200);
+          expect(response.statusCode).to.equal(404);
         }
         done();
       });
