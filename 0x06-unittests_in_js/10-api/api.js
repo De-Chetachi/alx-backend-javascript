@@ -18,9 +18,9 @@ app.get('/available_payments', function(req, res) {
 });
 
 app.post('/login', function(req, res) {
-  const user = req.body.userName;
+  const user = req.body.userName || req.json.userName;
   if (user) {
-    res.send(`Welcome ${userName}`);
+    res.send(`Welcome ${user}`);
   } else {
     res.status(404).send();
   }
